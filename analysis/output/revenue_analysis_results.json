@@ -1,0 +1,47 @@
+{
+  "overall_financials": {
+    "total_processed_revenue_inr": 1261834.27,
+    "initial_successful_revenue_inr": 637831.48,
+    "initial_failed_revenue_inr": 624002.79,
+    "revenue_recovered_inr": 260730.8,
+    "permanently_lost_revenue_inr": 363271.99,
+    "final_net_realized_revenue_inr": 898562.28,
+    "revenue_recovery_rate_pct": 41.78,
+    "net_realization_rate_pct": 71.21,
+    "permanently_lost_rate_pct": 28.79
+  },
+  "revenue_by_payment_mode": [
+    {
+      "payment_mode": "AutoPay",
+      "total_revenue": 310060.66000000003,
+      "failed_revenue": 132128.83000000002,
+      "revenue_recovered": 48475.41,
+      "permanently_lost_revenue": 83653.42000000001,
+      "mode_recovery_rate_pct": 36.687988533615254
+    },
+    {
+      "payment_mode": "Contact",
+      "total_revenue": 287313.8,
+      "failed_revenue": 163971.39,
+      "revenue_recovered": 57390.0,
+      "permanently_lost_revenue": 106581.39000000001,
+      "mode_recovery_rate_pct": 35.000008233143596
+    },
+    {
+      "payment_mode": "Online",
+      "total_revenue": 358594.55,
+      "failed_revenue": 181718.03999999998,
+      "revenue_recovered": 81773.12,
+      "permanently_lost_revenue": 99944.91999999998,
+      "mode_recovery_rate_pct": 45.0000011006062
+    },
+    {
+      "payment_mode": "QR",
+      "total_revenue": 305865.26,
+      "failed_revenue": 146184.52999999997,
+      "revenue_recovered": 73092.27,
+      "permanently_lost_revenue": 73092.25999999997,
+      "mode_recovery_rate_pct": 50.00000342033457
+    }
+  ]
+}
