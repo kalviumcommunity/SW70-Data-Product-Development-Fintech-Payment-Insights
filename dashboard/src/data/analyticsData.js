@@ -53,5 +53,183 @@ export const analyticsData = {
     average_retry_count: 1.94,
     temporary_failures: 155,
     permanent_failures: 95
-  }
+  },
+  system_alerts: [
+    {
+      id: "ALT-8921",
+      severity: "warning",
+      title: "Elevated Friction in Contact Payments (Rural Region)",
+      description: "Failure rate reached 55.8% due to bank authentication timeouts during peak hours.",
+      timestamp: "10 minutes ago",
+      read: false
+    },
+    {
+      id: "ALT-8919",
+      severity: "success",
+      title: "Smart Retry Engine Milestone",
+      description: "Auto-retry rule #R-102 recovered ₹45,200 across 24 temporary food delivery failures today.",
+      timestamp: "45 minutes ago",
+      read: false
+    },
+    {
+      id: "ALT-8904",
+      severity: "info",
+      title: "Power BI Data Model Sync Completed",
+      description: "Daily transaction failure matrix refreshed successfully for Q3 2026 reporting.",
+      timestamp: "2 hours ago",
+      read: true
+    }
+  ],
+  retry_rules: [
+    {
+      id: "R-101",
+      name: "Fast-Track Immediate Retry (+30s)",
+      trigger: "Temporary Network Timeout / HTTP 504",
+      mode: "Online, Contact",
+      delay: "30 seconds",
+      max_attempts: 3,
+      enabled: true,
+      recovery_rate: "45.2%",
+      recovered_amt: "₹178,920.50"
+    },
+    {
+      id: "R-102",
+      name: "Smart QR Auto-Reroute to Secondary Gateway",
+      trigger: "Bank Downtime / Auth Failure Code 91",
+      mode: "QR Code",
+      delay: "2 minutes",
+      max_attempts: 2,
+      enabled: true,
+      recovery_rate: "50.0%",
+      recovered_amt: "₹73,092.27"
+    },
+    {
+      id: "R-103",
+      name: "AutoPay Off-Peak Night Buffer",
+      trigger: "Insufficient Balance Temp Lock",
+      mode: "AutoPay",
+      delay: "10 minutes",
+      max_attempts: 3,
+      enabled: false,
+      recovery_rate: "36.7%",
+      recovered_amt: "₹48,475.41"
+    },
+    {
+      id: "R-104",
+      name: "High-Value Transaction Priority Recovery",
+      trigger: "Amount > ₹5,000 Friction",
+      mode: "All Modes",
+      delay: "45 seconds",
+      max_attempts: 3,
+      enabled: true,
+      recovery_rate: "62.4%",
+      recovered_amt: "₹112,450.00"
+    }
+  ],
+  recent_transactions: [
+    {
+      id: "TXN-90812",
+      merchant: "Swiggy Express",
+      category: "Food & Dining",
+      amount: 1450.00,
+      mode: "Contact",
+      location: "Rural",
+      status: "Recovered",
+      failure_reason: "Auth Gateway Timeout (HTTP 504)",
+      retry_count: 1,
+      recovered_via: "Rule R-101 (+30s Retry)",
+      timestamp: "2026-08-31 14:25:12"
+    },
+    {
+      id: "TXN-90811",
+      merchant: "Amazon India",
+      category: "Shopping",
+      amount: 4999.00,
+      mode: "Online",
+      location: "Urban",
+      status: "Successful",
+      failure_reason: "None",
+      retry_count: 0,
+      recovered_via: "Initial Auth",
+      timestamp: "2026-08-31 14:24:01"
+    },
+    {
+      id: "TXN-90810",
+      merchant: "Zomato Gold",
+      category: "Food & Dining",
+      amount: 890.00,
+      mode: "QR",
+      location: "Semi-Urban",
+      status: "Permanently Failed",
+      failure_reason: "Card Stolen / Account Closed (Code 14)",
+      retry_count: 3,
+      recovered_via: "N/A (Permanent Hard Decline)",
+      timestamp: "2026-08-31 14:22:45"
+    },
+    {
+      id: "TXN-90809",
+      merchant: "MakeMyTrip",
+      category: "Travel",
+      amount: 12500.00,
+      mode: "Online",
+      location: "Urban",
+      status: "Recovered",
+      failure_reason: "Bank Server Congestion",
+      retry_count: 2,
+      recovered_via: "Rule R-104 (Priority Retry)",
+      timestamp: "2026-08-31 14:19:30"
+    },
+    {
+      id: "TXN-90808",
+      merchant: "Airtel Postpaid",
+      category: "Bills & Utilities",
+      amount: 799.00,
+      mode: "AutoPay",
+      location: "Rural",
+      status: "Recovered",
+      failure_reason: "Temporary Insufficient Balance Lock",
+      retry_count: 1,
+      recovered_via: "Rule R-103 (AutoPay Retry)",
+      timestamp: "2026-08-31 14:15:02"
+    },
+    {
+      id: "TXN-90807",
+      merchant: "Reliance Fresh",
+      category: "Groceries",
+      amount: 2340.00,
+      mode: "QR",
+      location: "Urban",
+      status: "Permanently Failed",
+      failure_reason: "Invalid PIN / Auth Failed (Code 51)",
+      retry_count: 3,
+      recovered_via: "N/A (Max Retries Reached)",
+      timestamp: "2026-08-31 14:12:18"
+    },
+    {
+      id: "TXN-90806",
+      merchant: "Netflix India",
+      category: "Entertainment",
+      amount: 649.00,
+      mode: "AutoPay",
+      location: "Semi-Urban",
+      status: "Successful",
+      failure_reason: "None",
+      retry_count: 0,
+      recovered_via: "Initial Auth",
+      timestamp: "2026-08-31 14:08:50"
+    },
+    {
+      id: "TXN-90805",
+      merchant: "Apollo Pharmacy",
+      category: "Health & Pharmacy",
+      amount: 1850.00,
+      mode: "Contact",
+      location: "Rural",
+      status: "Recovered",
+      failure_reason: "Network Packet Drop",
+      retry_count: 1,
+      recovered_via: "Rule R-101 (+30s Retry)",
+      timestamp: "2026-08-31 14:05:11"
+    }
+  ]
 };
