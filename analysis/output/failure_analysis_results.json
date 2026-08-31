@@ -1,0 +1,300 @@
+{
+  "overall": {
+    "total_transactions": 500,
+    "successful_transactions": 250,
+    "failed_transactions": 250,
+    "failure_rate_pct": 50.0,
+    "total_amount_inr": 1261834.27,
+    "successful_amount_inr": 637831.48,
+    "failed_amount_inr": 624002.79,
+    "failed_amount_pct": 49.45
+  },
+  "by_payment_mode": [
+    {
+      "payment_mode": "AutoPay",
+      "total_txns": 118,
+      "failed_txns": 53,
+      "total_amount": 310060.66000000003,
+      "failed_amount": 132128.83000000002,
+      "failure_rate": 44.91525423728814
+    },
+    {
+      "payment_mode": "Contact",
+      "total_txns": 120,
+      "failed_txns": 67,
+      "total_amount": 287313.8,
+      "failed_amount": 163971.39,
+      "failure_rate": 55.833333333333336
+    },
+    {
+      "payment_mode": "Online",
+      "total_txns": 134,
+      "failed_txns": 66,
+      "total_amount": 358594.55,
+      "failed_amount": 181718.03999999998,
+      "failure_rate": 49.25373134328358
+    },
+    {
+      "payment_mode": "QR",
+      "total_txns": 128,
+      "failed_txns": 64,
+      "total_amount": 305865.26,
+      "failed_amount": 146184.52999999997,
+      "failure_rate": 50.0
+    }
+  ],
+  "by_merchant_category": [
+    {
+      "merchant_category": "Bills & Utilities",
+      "total_txns": 44,
+      "failed_txns": 20,
+      "total_amount": 113336.14,
+      "failed_amount": 63458.35000000001,
+      "failure_rate": 45.45454545454545
+    },
+    {
+      "merchant_category": "Entertainment",
+      "total_txns": 46,
+      "failed_txns": 26,
+      "total_amount": 113308.65,
+      "failed_amount": 69731.94,
+      "failure_rate": 56.52173913043478
+    },
+    {
+      "merchant_category": "Food & Dining",
+      "total_txns": 50,
+      "failed_txns": 30,
+      "total_amount": 153936.73,
+      "failed_amount": 86030.51000000001,
+      "failure_rate": 60.0
+    },
+    {
+      "merchant_category": "Fuel",
+      "total_txns": 53,
+      "failed_txns": 21,
+      "total_amount": 131093.76,
+      "failed_amount": 47290.66,
+      "failure_rate": 39.62264150943396
+    },
+    {
+      "merchant_category": "Groceries",
+      "total_txns": 52,
+      "failed_txns": 25,
+      "total_amount": 123898.28,
+      "failed_amount": 50957.130000000005,
+      "failure_rate": 48.07692307692308
+    },
+    {
+      "merchant_category": "Health & Pharmacy",
+      "total_txns": 54,
+      "failed_txns": 24,
+      "total_amount": 129490.53,
+      "failed_amount": 54055.85,
+      "failure_rate": 44.44444444444444
+    },
+    {
+      "merchant_category": "Online Services",
+      "total_txns": 60,
+      "failed_txns": 32,
+      "total_amount": 145041.7,
+      "failed_amount": 73634.76999999999,
+      "failure_rate": 53.333333333333336
+    },
+    {
+      "merchant_category": "Other",
+      "total_txns": 44,
+      "failed_txns": 25,
+      "total_amount": 104779.03,
+      "failed_amount": 55805.240000000005,
+      "failure_rate": 56.81818181818182
+    },
+    {
+      "merchant_category": "Shopping",
+      "total_txns": 47,
+      "failed_txns": 22,
+      "total_amount": 124489.45,
+      "failed_amount": 62208.229999999996,
+      "failure_rate": 46.808510638297875
+    },
+    {
+      "merchant_category": "Travel",
+      "total_txns": 50,
+      "failed_txns": 25,
+      "total_amount": 122460.0,
+      "failed_amount": 60830.11,
+      "failure_rate": 50.0
+    }
+  ],
+  "by_location_type": [
+    {
+      "location_type": "Rural",
+      "total_txns": 173,
+      "failed_txns": 94,
+      "total_amount": 455349.11,
+      "failed_amount": 240183.81999999998,
+      "failure_rate": 54.33526011560693
+    },
+    {
+      "location_type": "Semi-Urban",
+      "total_txns": 153,
+      "failed_txns": 70,
+      "total_amount": 383514.39,
+      "failed_amount": 176126.43000000002,
+      "failure_rate": 45.751633986928105
+    },
+    {
+      "location_type": "Urban",
+      "total_txns": 174,
+      "failed_txns": 86,
+      "total_amount": 422970.77,
+      "failed_amount": 207692.54,
+      "failure_rate": 49.42528735632184
+    }
+  ],
+  "by_hour": [
+    {
+      "transaction_hour": 0,
+      "total_txns": 24,
+      "failed_txns": 12,
+      "failure_rate": 50.0
+    },
+    {
+      "transaction_hour": 1,
+      "total_txns": 19,
+      "failed_txns": 11,
+      "failure_rate": 57.89473684210527
+    },
+    {
+      "transaction_hour": 2,
+      "total_txns": 20,
+      "failed_txns": 10,
+      "failure_rate": 50.0
+    },
+    {
+      "transaction_hour": 3,
+      "total_txns": 18,
+      "failed_txns": 9,
+      "failure_rate": 50.0
+    },
+    {
+      "transaction_hour": 4,
+      "total_txns": 14,
+      "failed_txns": 7,
+      "failure_rate": 50.0
+    },
+    {
+      "transaction_hour": 5,
+      "total_txns": 20,
+      "failed_txns": 6,
+      "failure_rate": 30.0
+    },
+    {
+      "transaction_hour": 6,
+      "total_txns": 22,
+      "failed_txns": 10,
+      "failure_rate": 45.45454545454545
+    },
+    {
+      "transaction_hour": 7,
+      "total_txns": 18,
+      "failed_txns": 13,
+      "failure_rate": 72.22222222222221
+    },
+    {
+      "transaction_hour": 8,
+      "total_txns": 14,
+      "failed_txns": 7,
+      "failure_rate": 50.0
+    },
+    {
+      "transaction_hour": 9,
+      "total_txns": 15,
+      "failed_txns": 9,
+      "failure_rate": 60.0
+    },
+    {
+      "transaction_hour": 10,
+      "total_txns": 16,
+      "failed_txns": 11,
+      "failure_rate": 68.75
+    },
+    {
+      "transaction_hour": 11,
+      "total_txns": 30,
+      "failed_txns": 13,
+      "failure_rate": 43.333333333333336
+    },
+    {
+      "transaction_hour": 12,
+      "total_txns": 28,
+      "failed_txns": 15,
+      "failure_rate": 53.57142857142857
+    },
+    {
+      "transaction_hour": 13,
+      "total_txns": 19,
+      "failed_txns": 11,
+      "failure_rate": 57.89473684210527
+    },
+    {
+      "transaction_hour": 14,
+      "total_txns": 25,
+      "failed_txns": 12,
+      "failure_rate": 48.0
+    },
+    {
+      "transaction_hour": 15,
+      "total_txns": 25,
+      "failed_txns": 14,
+      "failure_rate": 56.00000000000001
+    },
+    {
+      "transaction_hour": 16,
+      "total_txns": 19,
+      "failed_txns": 8,
+      "failure_rate": 42.10526315789473
+    },
+    {
+      "transaction_hour": 17,
+      "total_txns": 26,
+      "failed_txns": 11,
+      "failure_rate": 42.30769230769231
+    },
+    {
+      "transaction_hour": 18,
+      "total_txns": 24,
+      "failed_txns": 10,
+      "failure_rate": 41.66666666666667
+    },
+    {
+      "transaction_hour": 19,
+      "total_txns": 19,
+      "failed_txns": 10,
+      "failure_rate": 52.63157894736842
+    },
+    {
+      "transaction_hour": 20,
+      "total_txns": 27,
+      "failed_txns": 12,
+      "failure_rate": 44.44444444444444
+    },
+    {
+      "transaction_hour": 21,
+      "total_txns": 22,
+      "failed_txns": 13,
+      "failure_rate": 59.09090909090909
+    },
+    {
+      "transaction_hour": 22,
+      "total_txns": 14,
+      "failed_txns": 6,
+      "failure_rate": 42.857142857142854
+    },
+    {
+      "transaction_hour": 23,
+      "total_txns": 22,
+      "failed_txns": 10,
+      "failure_rate": 45.45454545454545
+    }
+  ]
+}
